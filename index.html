@@ -4,12 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário Enquete</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="title">Formulário Enquete por thiagorraposo</h1>
-    <p id="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, cupiditate. Necessitatibus nemo, explicabo eum corporis earum ullam itaque saepe unde deserunt ipsum incidunt quod. Minima pariatur sunt totam ullam unde.</p>
-    <form id="survey-form">
-        <input id="name" type="text">
-    </form>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Formulário de Enquete por @thiagorraposo</h1>
+            <p id="description">Seja bem vindo ao nosso questionário, responda às questões abaixo com atenção e responsabilidade</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="">
+                    nome:
+                    <input id="name" type="text" placeholder="seu nome completo" required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="">
+                    email:
+                    <input id="email" type="email" placeholder="exemplo@gmail.com" required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="">
+                    idade:
+                    <input id="number" type="number" min="14" max="65" placeholder="xx" required>
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Escolha uma linguagem de programação: </p>
+                <select name="" id="dropdown">
+                    <p>Ecolha qual sua linguagem de programação preferida:</p>
+                    <option disabled selected value>clique aqui</option>
+                    <option value="pyton">Pyton</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="java">Java</option>
+                    <option value="c#">C#</option>
+                    <option value="php">PHP</option>
+                    <option value="rubi">Rubi</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input value="radio" name="radio" type="radio">
+                <input value="radio" name="radio" type="radio">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
